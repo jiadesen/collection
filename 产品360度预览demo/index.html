@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>产品360度预览demo</title>
+  <link rel="stylesheet" href="css/normalize.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="product-window" data-frame="16" data-friction="0.33">
+      <!-- 产品展示区 -->
+      <figure class="product-viewer">
+        <img src="img/img-loading.jpg">
+        <div class="product-sprite" data-image="img/alfa.jpg"></div>
+      </figure>
+      <!-- 滑块 -->
+      <div class="product-viewer-handle">
+        <span class="fill"></span>
+        <span class="handle"></span>
+      </div>
+    </div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
