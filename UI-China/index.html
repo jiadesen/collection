@@ -5,7 +5,7 @@
   <title>UI中国-专业界面交互设计平台</title>
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/normalize.min.css">
-  <link rel="stylesheet" href="css/index.min.css">
+  <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 <header id="header">
@@ -78,143 +78,134 @@
 </section>
 <div class="column">
   <ul class="lf">
-    <li><a href="#">首页推荐</a></li>
-    <li><a href="#">佳作分享</a></li>
-    <li><a href="#">最新作品</a></li>
+    <li class="active"><a href="homepage">首页推荐</a></li>
+    <li><a href="share">佳作分享</a></li>
+    <li><a href="new">最新作品</a></li>
   </ul>
 </div>
 <div id="main">
-  <div>
-    <dl>
-      <dt><img src="img/main/main_1.jpg"/></dt>
-      <dd>UI中国核心用户群线上分享会</dd>
-      <dd>用豹纹称霸美柚大赛的直男</dd>
-      <dd><span><img src="img/head/s_hd_1.jpg"/></span><a href="#">UI中国</a></dd>
-    </dl>
-    <dl>
-      <dt><img src="img/main/main_2.jpg"/></dt>
-      <dd>实力硬派设计师，你敢来认证吗...</dd>
-      <dd>UI中国认证设计师</dd>
-      <dd><span><img src="img/head/s_hd_2.jpg"/></span><a href="#">UI中国</a></dd>
-    </dl>
-    <dl>
-      <dt><img src="img/main/main_3.jpg"/></dt>
-      <dd>核心用户群全面开放</dd>
-      <dd>uicner是时候亮出身份，跟我们一起并肩！</dd>
-      <dd><span><img src="img/head/s_hd_3.jpg"/></span><a href="#">UI中国</a></dd>
-    </dl>
-    <dl>
-      <dt><img src="img/main/main_4.jpg"/></dt>
-      <dd>用画作诗的虹之女神</dd>
-      <dd>UI中国设计师-MarinaRen</dd>
-      <dd><span><img src="img/head/s_hd_4.jpg"/></span><a href="#">UI中国人物专访</a></dd>
-    </dl>
+  <div class="main">
+    <!--<dl>-->
+    <!--<dt><img src="img/main/main_1.jpg"/></dt>-->
+    <!--<dd>UI中国核心用户群线上分享会</dd>-->
+    <!--<dd>用豹纹称霸美柚大赛的直男</dd>-->
+    <!--<dd><span><img src="img/head/s_hd_1.jpg"/></span><a href="#">UI中国</a></dd>-->
+    <!--</dl>-->
+    <!--<dl>-->
+    <!--<dt><img src="img/main/main_2.jpg"/></dt>-->
+    <!--<dd>实力硬派设计师，你敢来认证吗...</dd>-->
+    <!--<dd>UI中国认证设计师</dd>-->
+    <!--<dd><span><img src="img/head/s_hd_2.jpg"/></span><a href="#">UI中国</a></dd>-->
+    <!--</dl>-->
+    <!--<dl>-->
+    <!--<dt><img src="img/main/main_3.jpg"/></dt>-->
+    <!--<dd>核心用户群全面开放</dd>-->
+    <!--<dd>uicner是时候亮出身份，跟我们一起并肩！</dd>-->
+    <!--<dd><span><img src="img/head/s_hd_3.jpg"/></span><a href="#">UI中国</a></dd>-->
+    <!--</dl>-->
+    <!--<dl>-->
+    <!--<dt><img src="img/main/main_4.jpg"/></dt>-->
+    <!--<dd>用画作诗的虹之女神</dd>-->
+    <!--<dd>UI中国设计师-MarinaRen</dd>-->
+    <!--<dd><span><img src="img/head/s_hd_4.jpg"/></span><a href="#">UI中国人物专访</a></dd>-->
+    <!--</dl>-->
+    <!--<dl>-->
+    <!--<dt><img src="img/main/main_5.jpg"/></dt>-->
+    <!--<dd>关于IOS10锁屏界面交互的一次...</dd>-->
+    <!--<dd>用豹纹称霸美柚大赛的直男</dd>-->
+    <!--<dd><span><img src="img/head/s_hd_5.jpg"/></span><a href="#">zhuyuxuan</a></dd>-->
+    <!--</dl>-->
+    <!--<dl>-->
+    <!--<dt><img src="img/main/main_6.jpg"/></dt>-->
+    <!--<dd>设计师的灵感来源——东京旅行...</dd>-->
+    <!--<dd>UI中国认证设计师</dd>-->
+    <!--<dd><span><img src="img/head/s_hd_6.jpg"/></span><a href="#">阿里巴巴UED</a></dd>-->
+    <!--</dl>-->
+    <!--<dl>-->
+    <!--<dt><img src="img/main/main_7.jpg"/></dt>-->
+    <!--<dd>实战项目——Sketch打造MINI W...</dd>-->
+    <!--<dd>uicner是时候亮出身份，跟我们一起并肩！</dd>-->
+    <!--<dd><span><img src="img/head/s_hd_7.jpg"/></span><a href="#">wenroudong</a></dd>-->
+    <!--</dl>-->
+    <!--<dl>-->
+    <!--<dt><img src="img/main/main_8.jpg"/></dt>-->
+    <!--<dd>复杂任务引导设计——阿里云国...</dd>-->
+    <!--<dd>UI中国设计师-MarinaRen</dd>-->
+    <!--<dd><span><img src="img/head/s_hd_8.jpg"/></span><a href="#">阿里巴巴UED</a></dd>-->
+    <!--</dl>-->
+    <!--<dl>-->
+    <!--<dt><img src="img/main/main_9.jpg"/></dt>-->
+    <!--<dd>SA9527-描啦个描~</dd>-->
+    <!--<dd>用豹纹称霸美柚大赛的直男</dd>-->
+    <!--<dd><span><img src="img/head/s_hd_9.jpg"/></span><a href="#">SA9527</a></dd>-->
+    <!--</dl>-->
+    <!--<dl>-->
+    <!--<dt><img src="img/main/main_10.jpg"/></dt>-->
+    <!--<dd>字形合一，网页设计中的图文配</dd>-->
+    <!--<dd>UI中国认证设计师</dd>-->
+    <!--<dd><span><img src="img/head/s_hd_10.jpg"/></span><a href="#">飞屋哲</a></dd>-->
+    <!--</dl>-->
+    <!--<dl>-->
+    <!--<dt><img src="img/main/main_11.jpg"/></dt>-->
+    <!--<dd>字趣设计</dd>-->
+    <!--<dd>uicner是时候亮出身份，跟我们一起并肩！</dd>-->
+    <!--<dd><span><img src="img/head/s_hd_11.jpg"/></span><a href="#">木子李</a></dd>-->
+    <!--</dl>-->
+    <!--<dl>-->
+    <!--<dt><img src="img/main/main_12.jpg"/></dt>-->
+    <!--<dd>LAZY STAR BOY&#45;&#45;2</dd>-->
+    <!--<dd>UI中国设计师-MarinaRen</dd>-->
+    <!--<dd><span><img src="img/head/s_hd_12.jpg"/></span><a href="#">白鱼123</a></dd>-->
+    <!--</dl>-->
+    <!--<dl>-->
+    <!--<dt><img src="img/main/main_13.gif"/></dt>-->
+    <!--<dd>小柚子的怪物世界</dd>-->
+    <!--<dd>用豹纹称霸美柚大赛的直男</dd>-->
+    <!--<dd><span><img src="img/head/s_hd_13.jpg"/></span><a href="#">歌舞升平</a></dd>-->
+    <!--</dl>-->
+    <!--<dl>-->
+    <!--<dt><img src="img/main/main_14.gif"/></dt>-->
+    <!--<dd>百变美柚</dd>-->
+    <!--<dd>UI中国认证设计师</dd>-->
+    <!--<dd><span><img src="img/head/s_hd_14.jpg"/></span><a href="#">蓝_若空</a></dd>-->
+    <!--</dl>-->
+    <!--<dl>-->
+    <!--<dt><img src="img/main/main_15.jpg"/></dt>-->
+    <!--<dd>Exercise APP概念设计</dd>-->
+    <!--<dd>uicner是时候亮出身份，跟我们一起并肩！</dd>-->
+    <!--<dd><span><img src="img/head/s_hd_15.jpg"/></span><a href="#">JACKW</a></dd>-->
+    <!--</dl>-->
+    <!--<dl>-->
+    <!--<dt><img src="img/main/main_16.jpg"/></dt>-->
+    <!--<dd>日月解|Sun.Moon.Anat*my</dd>-->
+    <!--<dd>UI中国设计师-MarinaRen</dd>-->
+    <!--<dd><span><img src="img/head/s_hd_16.jpg"/></span><a href="#">bonpo</a></dd>-->
+    <!--</dl>-->
+    <!--<dl>-->
+    <!--<dt><img src="img/main/main_17.gif"/></dt>-->
+    <!--<dd>咖 APP 界面 交互 设计</dd>-->
+    <!--<dd>用豹纹称霸美柚大赛的直男</dd>-->
+    <!--<dd><span><img src="img/head/s_hd_17.jpg"/></span><a href="#">KennyCormick</a></dd>-->
+    <!--</dl>-->
+    <!--<dl>-->
+    <!--<dt><img src="img/main/main_18.jpg"/></dt>-->
+    <!--<dd>2015-baidu合集</dd>-->
+    <!--<dd>UI中国认证设计师</dd>-->
+    <!--<dd><span><img src="img/head/s_hd_18.jpg"/></span><a href="#">sandman</a></dd>-->
+    <!--</dl>-->
+    <!--<dl>-->
+    <!--<dt><img src="img/main/main_19.gif"/></dt>-->
+    <!--<dd>春田柚子</dd>-->
+    <!--<dd>uicner是时候亮出身份，跟我们一起并肩！</dd>-->
+    <!--<dd><span><img src="img/head/s_hd_19.jpg"/></span><a href="#">Ahoy</a></dd>-->
+    <!--</dl>-->
+    <!--<dl>-->
+    <!--<dt><img src="img/main/main_20.jpg"/></dt>-->
+    <!--<dd>最爱肉夹馍提案</dd>-->
+    <!--<dd>UI中国设计师-MarinaRen</dd>-->
+    <!--<dd><span><img src="img/head/s_hd_20.jpg"/></span><a href="#">WOYOTIME</a></dd>-->
+    <!--</dl>-->
   </div>
-  <div>
-    <dl>
-      <dt><img src="img/main/main_5.jpg"/></dt>
-      <dd>关于IOS10锁屏界面交互的一次...</dd>
-      <dd>用豹纹称霸美柚大赛的直男</dd>
-      <dd><span><img src="img/head/s_hd_5.jpg"/></span><a href="#">zhuyuxuan</a></dd>
-    </dl>
-    <dl>
-      <dt><img src="img/main/main_6.jpg"/></dt>
-      <dd>设计师的灵感来源——东京旅行...</dd>
-      <dd>UI中国认证设计师</dd>
-      <dd><span><img src="img/head/s_hd_6.jpg"/></span><a href="#">阿里巴巴UED</a></dd>
-    </dl>
-    <dl>
-      <dt><img src="img/main/main_7.jpg"/></dt>
-      <dd>实战项目——Sketch打造MINI W...</dd>
-      <dd>uicner是时候亮出身份，跟我们一起并肩！</dd>
-      <dd><span><img src="img/head/s_hd_7.jpg"/></span><a href="#">wenroudong</a></dd>
-    </dl>
-    <dl>
-      <dt><img src="img/main/main_8.jpg"/></dt>
-      <dd>复杂任务引导设计——阿里云国...</dd>
-      <dd>UI中国设计师-MarinaRen</dd>
-      <dd><span><img src="img/head/s_hd_8.jpg"/></span><a href="#">阿里巴巴UED</a></dd>
-    </dl>
-  </div>
-  <div>
-    <dl>
-      <dt><img src="img/main/main_9.jpg"/></dt>
-      <dd>SA9527-描啦个描~</dd>
-      <dd>用豹纹称霸美柚大赛的直男</dd>
-      <dd><span><img src="img/head/s_hd_9.jpg"/></span><a href="#">SA9527</a></dd>
-    </dl>
-    <dl>
-      <dt><img src="img/main/main_10.jpg"/></dt>
-      <dd>字形合一，网页设计中的图文配</dd>
-      <dd>UI中国认证设计师</dd>
-      <dd><span><img src="img/head/s_hd_10.jpg"/></span><a href="#">飞屋哲</a></dd>
-    </dl>
-    <dl>
-      <dt><img src="img/main/main_11.jpg"/></dt>
-      <dd>字趣设计</dd>
-      <dd>uicner是时候亮出身份，跟我们一起并肩！</dd>
-      <dd><span><img src="img/head/s_hd_11.jpg"/></span><a href="#">木子李</a></dd>
-    </dl>
-    <dl>
-      <dt><img src="img/main/main_12.jpg"/></dt>
-      <dd>LAZY STAR BOY--2</dd>
-      <dd>UI中国设计师-MarinaRen</dd>
-      <dd><span><img src="img/head/s_hd_12.jpg"/></span><a href="#">白鱼123</a></dd>
-    </dl>
-  </div>
-  <div>
-    <dl>
-      <dt><img src="img/main/main_13.gif"/></dt>
-      <dd>小柚子的怪物世界</dd>
-      <dd>用豹纹称霸美柚大赛的直男</dd>
-      <dd><span><img src="img/head/s_hd_13.jpg"/></span><a href="#">歌舞升平</a></dd>
-    </dl>
-    <dl>
-      <dt><img src="img/main/main_14.gif"/></dt>
-      <dd>百变美柚</dd>
-      <dd>UI中国认证设计师</dd>
-      <dd><span><img src="img/head/s_hd_14.jpg"/></span><a href="#">蓝_若空</a></dd>
-    </dl>
-    <dl>
-      <dt><img src="img/main/main_15.jpg"/></dt>
-      <dd>Exercise APP概念设计</dd>
-      <dd>uicner是时候亮出身份，跟我们一起并肩！</dd>
-      <dd><span><img src="img/head/s_hd_15.jpg"/></span><a href="#">JACKW</a></dd>
-    </dl>
-    <dl>
-      <dt><img src="img/main/main_16.jpg"/></dt>
-      <dd>日月解|Sun.Moon.Anat*my</dd>
-      <dd>UI中国设计师-MarinaRen</dd>
-      <dd><span><img src="img/head/s_hd_16.jpg"/></span><a href="#">bonpo</a></dd>
-    </dl>
-  </div>
-  <div>
-    <dl>
-      <dt><img src="img/main/main_17.gif"/></dt>
-      <dd>咖 APP 界面 交互 设计</dd>
-      <dd>用豹纹称霸美柚大赛的直男</dd>
-      <dd><span><img src="img/head/s_hd_17.jpg"/></span><a href="#">KennyCormick</a></dd>
-    </dl>
-    <dl>
-      <dt><img src="img/main/main_18.jpg"/></dt>
-      <dd>2015-baidu合集</dd>
-      <dd>UI中国认证设计师</dd>
-      <dd><span><img src="img/head/s_hd_18.jpg"/></span><a href="#">sandman</a></dd>
-    </dl>
-    <dl>
-      <dt><img src="img/main/main_19.gif"/></dt>
-      <dd>春田柚子</dd>
-      <dd>uicner是时候亮出身份，跟我们一起并肩！</dd>
-      <dd><span><img src="img/head/s_hd_19.jpg"/></span><a href="#">Ahoy</a></dd>
-    </dl>
-    <dl>
-      <dt><img src="img/main/main_20.jpg"/></dt>
-      <dd>最爱肉夹馍提案</dd>
-      <dd>UI中国设计师-MarinaRen</dd>
-      <dd><span><img src="img/head/s_hd_20.jpg"/></span><a href="#">WOYOTIME</a></dd>
-    </dl>
-  </div>
-
   <div class="clear"></div>
 </div>
 <div class="column">
@@ -357,6 +348,6 @@
 <!-- 清除浮动带来的影响 -->
 <div class="clear"></div>
 <script src="js/jquery-1.11.3.min.js"></script>
-<script src="js/index.min.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>

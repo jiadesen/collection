@@ -228,6 +228,11 @@ div.column {
 }
 
 .column ul li {
+  width: 100px;
+  height: 38px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  text-align: center;
   float: left;
   margin-right: 20px;
 }
@@ -235,17 +240,17 @@ div.column {
 .column ul li a {
   width: 100px;
   height: 38px;
-  border: 1px solid transparent;
-  border-radius: 20px;
-  text-align: center;
   line-height: 38px;
   color: #7C7C7C;
   font-size: 15px;
   transition: all .4s linear;
 }
 
-.column ul li:first-child a {
+.column ul .active {
   border: 1px solid #3498DB;
+}
+
+.column ul .active a {
   color: #3498DB;
 }
 
@@ -263,14 +268,15 @@ div.column {
 
 #main div {
   width: 1180px;
-  height: 363px;
   margin: 0 auto;
+  text-align: center;
 }
 
 #main div dl {
   width: 260px;
   height: 310px;
   float: left;
+  margin-left: 12px;
   border-bottom: 1px solid #ccc;
   padding: 10px;
   transition: all .5s linear;
@@ -286,10 +292,6 @@ div.column {
   width: 260px;
   height: 190px;
   overflow: hidden;
-}
-
-#main div dl:nth-child(1), :nth-child(2), :nth-child(3) {
-  margin-right: 20px;
 }
 
 #main div dl dt > img {

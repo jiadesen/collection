@@ -1,20 +1,48 @@
+/****************封装ajax*****************/
+function getAjax(type) {
+  $.ajax({
+    url: 'data/ui_china.php',
+    data: {'type': type},
+    success: function (list, msg, xhr) {
+      // console.log('开始处理响应数据');
+      var html = '';
+      $.each(list, function (i, arr) {
+        html += `
+          <dl>
+            <dt><img src="${arr.rec_img}"/></dt>
+            <dd>${arr.rec_con}</dd>
+            <dd>${arr.au_con}</dd>
+            <dd><span><img src="${arr.au_img}"/></span><a href="#">${arr.au_name}</a></dd>
+          </dl>
+          `;
+      });
+      $('.main').html(html);
+    }
+  })
+}
+//页面第一次加载时的默认显示
+window.onload = function () {
+  var type = 'homepage';
+  getAjax(type);
+};
+/******************鼠标点击时异步请求对应的数据列表*******************/
+$('.column ul li').on("click", "a", function (e) {
+  e.preventDefault();
+  $(this).parent().addClass('active').siblings('.active').removeClass('active');
+//  异步请求当前类别下的列表
+  var type = $(this).attr('href');
+  // console.log(type);
+  getAjax(type);
+});
 /* ***********************************模拟轮播效果********************************************** */
 var t = n = 0, count;
 $(document).ready(function () {
   count = $("#banner_list a").length;
   $("#banner_list a:not(:first-child)").hide();
-  //$("#banner_info").html($("#banner_list a:first-child").find("img").attr('alt'));
-  //$("#banner_info").click(function () {
-    //window.open($("#banner_list a:first-child").attr('href'), "_blank")
-  //});
   $("#banner li").click(function () {
     var i = $(this).text() - 1;
     n = i;
     if (i >= count) return;
-    //$("#banner_info").html($("#banner_list a").eq(i).find("img").attr('alt'));
-    //$("#banner_info").unbind().click(function () {
-      //window.open($("#banner_list a").eq(i).attr('href'), "_blank")
-    //});
     $("#banner_list a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
     document.getElementById("banner").style.background = "";
     $(this).toggleClass("on");
